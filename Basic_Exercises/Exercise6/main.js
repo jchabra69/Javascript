@@ -6,6 +6,10 @@ document.write(`These are the fruits <br> <br>`);
 
 for (let fruit of fruits) {
 
-    document.write(`${fruit}, `);
+    //document.write(`${fruit}, `);
+
 
 }
+
+//The most used
+document.write(fruits.join(', '));
