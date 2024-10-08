@@ -1,0 +1,4 @@
+Arguments es más antiguo y empieza desde 0
+… empieza desde el parámetro que quieras
+
+let amigo = function(edad, nombre, ...casas)

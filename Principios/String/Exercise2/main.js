@@ -7,6 +7,7 @@ let sendEmail = function (username, age, comments, email) {
 
     let format = null;
 
+    //Comprobar si es de typeof
     if (username.length === 0 || age.length === 0 || comments.length === 0 || email.length === 0) {
 
         return format;
