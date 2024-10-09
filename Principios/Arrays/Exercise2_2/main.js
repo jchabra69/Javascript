@@ -19,7 +19,6 @@ function arraysAreEqual(array1, array2) {
     }
 
     // Use every to compare each element in both arrays
-
     return array1.every((element, index) => element === array2[index]);
 }
 
