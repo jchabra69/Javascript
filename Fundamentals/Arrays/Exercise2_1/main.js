@@ -32,6 +32,7 @@ let sortStudentsLastName1 = function (arrayStudents) {
     arrayStudents.sort((student1, student2) =>
         student1.lastname1.localeCompare(student2.lastname1)
     );
+    //Aquí puedo llamar al sortStudents si hay empate
 };
 
 let sortStudentsLastName2 = function (arrayStudents) {

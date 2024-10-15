@@ -1,0 +1,12 @@
+Arguments es más antiguo y empieza desde 0
+… empieza desde el parámetro que quieras
+
+let amigo = function(edad, nombre, ...casas)
+
+
+YA NO HAY QUE COMPROBAR SI ME PASAN UN VALOR O NO
+SE PONE POR DEFECTO
+
+En los parámetros de la función se pone el valor por defecto
+
+function(a = 1, b = "2")

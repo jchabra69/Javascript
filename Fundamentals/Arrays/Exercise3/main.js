@@ -2,6 +2,8 @@
 //Based on an array of numbers
 const numbers = [-1, -2, -3, -4, -5, -100];
 
+//AQUÍ DEBERÍA HABER USADO .FILTER
+
 /*Create another array whose elements are the positive
 numbers of the first one.*/
 
