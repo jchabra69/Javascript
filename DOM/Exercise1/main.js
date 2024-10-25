@@ -2,7 +2,7 @@
 */
 
 //it will return an array of tags with that name
-const arrayLinks = document.getElementsByTagName('a');
+const arrayLinks = document.getElementsByTagName-('a');
 const arrayParagraphs = document.getElementsByTagName('p');
 
 //Number of links
