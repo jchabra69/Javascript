@@ -1,63 +1,54 @@
-/* Using the DOM, display the following data:
-*/
+//Find elements in table.html
 
-//it will return an array of tags with that name
-const arrayLinks = document.getElementsByTagName-('a');
-const arrayParagraphs = document.getElementsByTagName('p');
+//a
+const filterbyID = document.getElementById("age-table");
 
-//Number of links
-let countLinks = function(arrayLinks) {
+console.log(filterbyID);
 
-    return arrayLinks.length;
+//b
+const allLabels = document.getElementsByTagName("label");
 
-}
+for (let label of allLabels) {
 
-//Address to which the penultimate link links to
-let extractUrlPenultLink = function (arrayLink) {
-
-    return arrayLink[arrayLink.length - 2];
+    console.log(label);
 
 }
 
-//Number of links linking to the institute's website
-let groupUrlBelen = function(arrayLinks) {
+//c Returns the first td with the word age 
+const allTds = document.getElementsByTagName("td");
 
-    let urlBelenCount = 0;
+const firstTdwithFilter = Array.from(allTds).find(td => td.textContent == "Age");
 
-    //Read every link and check If it belongs to iesbelen.org
-    for (let link of arrayLinks) {
+if (firstTdwithFilter) {
+    console.log(firstTdwithFilter); // Imprime el <td> que contiene "Age"
+}
 
-        //I need the href attribute to check the value
-        let url = link.getAttribute('href') ?? ""; //Twice ?? to avoid a null/undef error
+//Cuando se devuelve una colección, hay que recorrerla para acceder al value
+ /* for (let td of allTds) {
 
-        if (url.includes("iesbelen.org")) {
+    if (td.textContent === "Age") {
 
-            urlBelenCount++;
-
-        }
+        console.log(td);
 
     }
 
-    return urlBelenCount;
+} */
+
+const elementsThatName = document.getElementsByName("search");
+
+console.log(elementsThatName);
+
+for (let element of elementsThatName) {
+
+    const input = element.querySelector("input");
+
+    //Si hay un input, devuelveme el primero y ultimo
+    if (input) {
+
+        console.log(element.firstElementChild);
+        console.log(element.lastElementChild)
+
+    }
 
 }
 
-//Number of links in the third paragraph
-let numberLinksThirdParagraph = function(arrayParagraph) {
-
-    const thirdParagraph = arrayParagraph[2]; // it returns a <p>
-
-    const totalLinks = thirdParagraph.getElementsByTagName("a");
-
-    return totalLinks.length;
-}
-
-window.onload = function() {
-
-    console.log(`There's a total of ${countLinks(arrayLinks)} links on the page.\n
-    Penultimate URL: ${extractUrlPenultLink(arrayLinks)} \n
-    URL linked to iesbelen.org = ${groupUrlBelen(arrayLinks)} \n
-    Total links in the third paragraph: ${numberLinksThirdParagraph(arrayParagraphs)} \n
-    `);
-
-}
