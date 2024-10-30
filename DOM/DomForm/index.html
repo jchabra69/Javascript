@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+
+    <h1>Facebook Andalusia</h1>
+
+    <form>
+
+        <div>
+
+            <label for="name">Full name</label>
+            <input type="text" required>
+
+        </div>
+
+        <div>
+
+            <label for="email">Email</label>
+            <input type="email" name="" id="" required>
+
+        </div>
+
+        <div>
+
+            <label for="passwd">Password</label>
+            <input type="password" required>
+
+        </div>
+
+        <div>
+
+            <input type="radio" name="gender" id="man" required>
+            <label>Man</label>
+            <input type="radio" name="gender" id="woman" required>
+            <label>Woman</label>
+
+        </div>
+
+
+        <div>
+
+            <label for="occupation">Choose an occupation</label>
+            <input list="occupation" required>
+
+            <datalist id="occupation">
+
+                <option value="Travel agent"></option>
+                <option value="Florist"></option>
+                <option value="Massage therapist"></option>
+                <option value="Sales assistant"></option>
+                <option value="Cosmetologist"></option>
+
+            </datalist>
+
+        </div>
+
+        <div>
+
+            <label for="province">City</label>
+            <select name="province" id="" required>
+
+                <option value="malaga"> Málaga </option>
+                <option value="granada">Granada</option>
+                <option value="jaen">Jaén</option>
+                <option value="sevilla">Sevilla</option>
+                <option value="cordoba">Córdoba</option>
+                
+            </select>
+
+        </div>
+
+        <div>
+
+            <label for="bio">Bio</label>
+            <textarea name="" id="" required></textarea>
+
+        </div>
+
+
+        <input type="submit" class="submitData" value="Enviar">
+
+
+
+    </form>
+
+</body>
+
+</html>
