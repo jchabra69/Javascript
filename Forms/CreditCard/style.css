@@ -1,0 +1,134 @@
+body {
+    background: linear-gradient(to right, #8dc4d2, #ffffff);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Establece una fuente cómoda para la lectura */
+}
+
+/* Centra la imagen y el formulario */
+.contenedorImagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* Contenedor del formulario */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+    padding: 20px;
+    max-width: 400px; /* Limita el ancho máximo */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Estilos para el título y el texto */
+p {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+/* Agrupa los inputs y los errores */
+.form-group {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Estilo para los inputs */
+.inputData {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 350px; /* Limita el ancho máximo */
+    height: 35px;
+    box-sizing: border-box;
+    font-size: 1rem; /* Asegura que el texto sea legible */
+}
+
+/* Estilo para el botón */
+.btn-submit {
+    background-color: #018cba;
+    color: white;
+    width: 100%; /* Hace que el botón ocupe todo el ancho */
+    max-width: 350px;
+    height: 40px;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #016fa2;
+}
+
+/* Mensajes de error */
+.input_error-message {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin: 5px 0;
+}
+
+/* Cuando se activa el mensaje de error */
+.input_error-message-activated {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Cuando hay error en el input */
+.inputErrors {
+    border: 3px solid red;
+}
+
+/* Cuando el input es válido */
+.inputCorrect {
+    border: 3px solid lightgreen;
+}
+
+/* Cuando el input tiene foco */
+.inputData-focused {
+    border-color: #66e5c6;
+    background-color: #e8f5e9;
+}
+
+/* Para capitalizar el nombre */
+.capitaLizeWords {
+    text-transform: uppercase;
+}
+
+/* MEDIA QUERIES para responsividad */
+
+@media (max-width: 768px) {
+    .form-container {
+        max-width: 90%; /* Hace que el formulario ocupe un mayor porcentaje en pantallas pequeñas */
+        height: auto;
+    }
+
+    .inputData {
+        max-width: 90%; /* Ajusta el ancho de los inputs en pantallas pequeñas */
+    }
+
+    .btn-submit {
+        max-width: 90%; /* Ajusta el botón */
+    }
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 1rem; /* Reduce el tamaño del texto en pantallas muy pequeñas */
+    }
+
+    .inputData, .btn-submit {
+        font-size: 0.9rem; /* Ajusta el tamaño del texto en inputs y botón */
+    }
+}
+

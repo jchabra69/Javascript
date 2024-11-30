@@ -1,0 +1,211 @@
+body {
+
+    font-family: 'Roboto', sans-serif;
+    background-color: lightgray;
+
+}
+
+.form {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*2 columnas*/
+    gap: 20px; /*Espacio de 20 píxeles entre los grupos*/
+
+}
+
+.form_label {
+
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer; /*Con esto le das a la etiqueta y te abre el escribir*/
+}
+
+.form_group_input {
+
+    position: relative;
+
+}
+
+.form_input {
+
+    width: 80%;
+    background: #fff;
+    border: 3px solid transparent;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transition: .3s ease all;
+}
+
+.form_input:focus {
+
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+
+}
+
+.form_input_error {
+
+    font-size: 15px;
+    margin-bottom: 0;
+    display: none; /*Importante, lo activaremos con js para mostrar el elemento cuando haya errores*/
+
+}
+
+/*Clase que activaré desde JS*/
+.form_input_error_active {
+
+    display: block;
+
+}
+
+
+.form_validation_status { 
+
+    font-size: 20px;
+    opacity: 0;
+
+}
+
+/* 
+.form_validation_status {
+
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+
+} */
+
+.form_checkbox {
+
+    margin-right: 10px;
+
+}
+
+.form_group_terms,
+.form_message,
+.form_group_form_group_btn_send {
+
+    grid-column: span 2;
+
+}
+
+.form_message {
+
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    display: none; /*Cuando haya error activamos esto desde JS*/
+
+}
+
+.form_message_active {
+	display: block;
+}
+
+.form_message p {
+
+    margin: 0;
+
+}
+
+.form_group_form_group_btn_send {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.form_btn_send {
+
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1s ease all;
+    font-size: 15px;
+
+}
+
+.form_btn_send:hover {
+
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+
+}
+
+.form_message_succesful {
+
+    font-size:18px;
+    font-weight: bold;
+    color: green;
+    display: none;
+
+}
+
+.form_message_succesful_activated {
+
+    display: block;
+
+}
+
+/*VALIDACIÓN DE DATOS, ICONOS QUE CAMBIAN*/
+.form_group_succesful /*Aqui no hay coma, solo se activa el segunod si el elemento tiene la primera clase*/
+.form_validation_status {
+
+    color: green;
+    opacity: 1;
+
+}
+
+/*Se pone la etiqueta roja cuando el elemento padre tenga esa clase de wrong*/
+.form_group_wrong
+.form_label {
+
+    color: red;
+
+}
+
+.form_group_wrong
+.form_validation_status {
+
+    color: red;
+    opacity: 1;
+
+}
+
+.form_group_wrong
+.form_input {
+
+    border: 3px solid red;
+
+}
+
+/* ----- -----  Mediaqueries ----- ----- */
+@media screen and (max-width: 800px) {
+	.formulario {
+		grid-template-columns: 1fr;
+	}
+
+	.form_group_terms, 
+	.form_message,
+	.form_group_form_group_btn_send {
+		grid-column: 1;
+	}
+
+	.form_btn_send {
+		width: 100%;
+	}
+}
+

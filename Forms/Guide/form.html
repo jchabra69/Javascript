@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <form action="" class="form" id="form">
+
+    <!--GRUPO USUARIO-->
+    <!-- Recuerda que en el js, agregaremos esta clase que activará el estilo-->
+    <!-- <div class="form_group form_group_succesful" id="group_user"> -->
+    <div class="form_group" id="group_user">
+
+        <label for="user" class="form_label">Usuario</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del inputo debe coincidir con el FOR del label-->
+        <input type="text" class="form_input" 
+        name = "usuario" id = "usuario" 
+        placeholder="Bogdan12">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+        <p class = "form_input_error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guión bajo</p>
+
+    </div>
+
+    <!--GRUPO Nombre-->
+    <div class="form_group" id="group_name">
+
+        <label for="name" class="form_label">Nombre</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del input debe coincidir con el FOR del label-->
+        <input type="text" class="form_input" name = "nombre" id = "name" placeholder="Isabel">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+
+        <p class = "form_input_error">El nombre tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guión bajo</p>
+
+    </div>
+
+    <!--GRUPO Contraseña-->
+    <div class="form_group" id="group_password">
+
+        <label for="password" class="form_label">Contraseña</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del input debe coincidir con el FOR del label-->
+        <input type="password" class="form_input" name = "password" id = "password">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+
+        <p class = "form_input_error">La contraseña tiene que ser de 4 a 12 dígitos</p>
+
+    </div>
+
+    <!--GRUPO Repetir Contraseña-->
+    <div class="form_group" id="group_password2">
+
+        <label for="password2" class="form_label">Repetir contraseña</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del input debe coincidir con el FOR del label-->
+        <input type="password" class="form_input" name = "password2" id = "password2">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+
+        <p class = "form_input_error">Ambas contraseñas deben ser iguales</p>
+
+    </div>
+
+    <!--GRUPO Email-->
+    <div class="form_group" id="group_email">
+
+        <label for="email" class="form_label">Email</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del input debe coincidir con el FOR del label-->
+        <input type="email" class="form_input" name = "email" id = "email" placeholder="johndoe@gmail.com">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+
+        <p class = "form_input_error">El correo solo puede contener letras, números, puntos, guiones y guión bajo</p>
+
+    </div>
+
+    <!--GRUPO Télefono-->
+    <div class="form_group" id="group_tlf">
+
+        <label for="tlf" class="form_label">Teléfono</label>
+
+        <!--Si quiero meter el icono con el input, hay que hacer div-->
+        <div class="form_group_input"></div>
+
+        <!--El id del input debe coincidir con el FOR del label-->
+        <input type="text" class="form_input" name = "tlf" id = "tlf" placeholder="666666777">
+        <i class="form_validation_status ri-error-warning-fill"></i>
+
+        <p class = "form_input_error">El teléfono solo puede contener números y el máximo son 14 dígitos</p>
+
+    </div>
+
+    <!--GRUPO Términos y condiciones-->
+    <div class = "form_group_terms" id = "group_terms">
+
+        <label class = "form_label">
+
+            <input class="form_checkbox" type="checkbox" name = "terms" id = "terms">
+
+            Acepto los términos y condiciones
+
+        </label>
+
+    </div>
+
+    <div class="form_message form_message_active" id="form_message">
+        <p>
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <b>Error:</b> Por favor rellena el formulario correctamente.
+        </p>
+    
+    </div>
+
+    <div class="form_group_form_group_btn_send">
+        <button type="submit" class="form_btn_send">Enviar</button>
+        <p class="form_message_succesful" id="form_message_succesful">¡Formulario enviado exitosamente!</p>
+    </div>
+    
+
+
+</form>
+
+
+</body>
+
+<script src="main.js"></script>
+
+</html>

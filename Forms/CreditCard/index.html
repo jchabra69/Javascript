@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+        <form class="form-general" action="" method="post">
+
+            <div class="form-container">
+                <div class="contenedorImagen">
+                    <img src="CreditCard.png" alt="creditCard" id="imagen">
+                </div>
+
+            <p>Start typing in here to take over and try it out</p>
+            <div>
+                <input class="inputData" type="text" name="numberCredit" id="input_NumberCredit"
+                    placeholder="Credit Card Number">
+                <p class="input_error-message">It must have the correct format of a credit card (16 digits in 4 blocks)
+                </p>
+                <input class="inputData" type="text" name="ownerName" id="input_OwnerName" placeholder="Name">
+                <p class="input_error-message">It must contain at least a first name and a last name, minimum 7
+                    characters.</p>
+            </div>
+
+            <div>
+                <input class="inputData" type="text" name="expirationDate" id="input_ExpirationDate" placeholder="Date">
+                <p class="input_error-message">You must follow the following format: MM/YY</p>
+                <input class="inputData" type="number" name="securityCode" id="input_SecurityCode" placeholder="CSV">
+                <p class="input_error-message">It must contain 3 digits.</p>
+                <button class = "btn-submit" type="submit">Submit</button>
+            </div>
+
+            </div>
+
+        </form>
+
+
+
+</body>
+<script src="main.js"></script>
+
+</html>
