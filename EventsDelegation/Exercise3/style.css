@@ -1,0 +1,78 @@
+.form-group {
+
+    border: 3px solid #1a8751;
+    padding: 5px; 
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  tr.selected {
+    background-color: #d2f8d2;
+  }
+
+.btn-send {
+
+    background-color: #1a8751;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+
+}
+
+.columna-activa {
+
+    background-color: #e1e1e1;
+
+}
+
+.fila-activa {
+
+    background-color: #1a8751;
+
+}
+
+.fila-activa-ctrl {
+
+    background-color: red;
+
+}
+
+.fila-activa-shift {
+
+    background-color: blue;
+
+}
+
+.fila-hermanos-activa {
+
+    background-color: #cde6dc;
+
+}
+
+.btn-trash {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}

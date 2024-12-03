@@ -1,0 +1,83 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Label Styling */
+.select-label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #444;
+}
+
+/* Styled Select */
+.modes {
+    width: 250px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover and Focus States */
+.modes:hover {
+    border-color: #aaa;
+    background-color: #f9f9f9;
+}
+
+.modes:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Option Styling */
+.modes option {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Body Background for Different Modes */
+body.lightMode {
+    background-color: #ffffff;
+    color: #333;
+}
+
+body.darkMode {
+    background-color: #1e1e1e;
+    color: #ffffff; 
+}
+
+body.darkMode .select-label {
+    color: white;
+}
+
+
+body.minimalistMode {
+    background-color: #C5BEB4;
+    color: #444;
+}
