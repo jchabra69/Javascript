@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container-filtros">
+        <label for="filtros">Continents:</label>
+
+        <select name="filtros" id="filtros" class="filtros">
+            <option value="Africa" data-continente="africa">Africa</option>
+            <option value="Asia and the Pacific" data-continente="asia">Asia and the Pacific</option>
+            <option value="Europe" data-continente="europe">Europe</option>
+            <option value="Latin America and the Caribbean" data-continente="latin">Latin America and the Caribbean
+            </option>
+            <option value="North America" data-continente="america">North America</option>
+        </select>
+
+        <!-- Botones para ocultar columnas -->
+        <div id="toggle-buttons">
+            <button class="toggle-countries" data-column="0">Hide Countries</button>
+            <button class="toggle-num" data-column="1">Hide Num</button>
+            <button class="toggle-companies" data-column="2">Hide Companies</button>
+        </div>
+
+    </div>
+
+    <table id="table-companies" class="table-companies">
+        <thead class="columnas-tabla">
+        <tr>
+            <th class="th-pais">Countries</th>
+            <th class="th-num">Num</th>
+            <th class="th-companies">Companies</th>
+        </tr>
+        </thead>
+        <tbody class="cuerpo-tabla">
+        </tbody>
+    </table>
+
+</body>
+
+<script src="data.js"></script>
+<script src="main.js"></script>
+
+</html>

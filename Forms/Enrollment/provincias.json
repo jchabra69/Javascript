@@ -1,0 +1,24 @@
+[
+    {
+        "id": "1",
+        "label": "Cádiz",
+        "provinces": [
+            {
+                "id": "1-1",
+                "label": "Prado del Rey",
+                "towns": [
+                    { "id": "1-1-1", "label": "Localidad A" },
+                    { "id": "1-1-2", "label": "Localidad B" }
+                ]
+            },
+            {
+                "id": "1-2",
+                "label": "Jerez de la Frontera",
+                "towns": [
+                    { "id": "1-2-1", "label": "Localidad C" },
+                    { "id": "1-2-2", "label": "Localidad D" }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,84 @@
+/* Estilo para las comunidades autónomas */
+.accordion-community > button {
+    background-color: #5b636b;
+    color: white;
+    font-weight: bold;
+}
+
+.accordion-item {
+    background-color: #5b636b;
+}
+
+/* Estilo para hacer el número de pueblos circular */
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 30%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    font-size: 0.9rem;
+    color: white;
+    background-color: #0d6efd; /* btn-primary */
+}
+
+/* Alineación del número de pueblos */
+.accordion-button {
+    display: flex;
+    justify-content: space-between; /* Esto asegura que los elementos dentro del botón se alineen a los extremos */
+    align-items: center;
+}
+
+.accordion-button .btn-circle {
+    margin-left: 10px; /* Espacio entre el texto y el círculo */
+    order: 2; /* Asegura que el botón circular esté a la derecha del texto */
+}
+
+
+.accordion-community .accordion-collapse {
+    background-color: #5b636b;
+}
+
+/* Estilo para los botones de las provincias */
+.accordion-province > button {
+    background-color: #0bc8f0;
+    color: black;
+    font-weight: bold;
+}
+
+/* Estilo para el contenido de las provincias (cuando se abre) */
+.accordion-province .accordion-body {
+    background-color: #0bc8f0;
+    color: black;
+}
+
+.container-sort {
+    background-color: #f8f9fa; /* Fondo claro */
+    padding: 15px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex; /* Usamos Flexbox para alineación */
+    gap: 15px; /* Espacio entre los elementos */
+    align-items: center; /* Alineación vertical centrada */
+}
+
+.container-sort label {
+    font-weight: bold; /* Hacer el texto en negrita */
+    margin-bottom: 0; /* Eliminar márgenes inferiores */
+}
+
+.container-sort select {
+    width: 180px; /* Ajustar el tamaño de los selects */
+    padding: 8px 12px; /* Relleno interno */
+    border-radius: 4px; /* Bordes redondeados */
+    border: 1px solid #ccc; /* Borde gris claro */
+    font-size: 14px; /* Tamaño de fuente adecuado */
+    transition: border 0.3s ease; /* Transición en el borde */
+}
+
+/* Efecto cuando el usuario interactúa con el select */
+.container-sort select:focus {
+    border-color: #007bff; /* Borde azul en focus */
+    outline: none; /* Quitar el borde de foco predeterminado */
+}
