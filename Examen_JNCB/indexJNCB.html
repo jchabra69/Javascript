@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Nicolás Chamero Bravo</title>
+    <link rel="stylesheet" href="styleJNCB.css">
+
+</head>
+
+<body>
+
+        <form class="advanced-search" action="">
+
+                <div>
+                <h3>ADVANCED SEARCH</h3>
+                <p>Text:</p>
+
+                <input type="search" name="busca" id="busqueda" required> <!--Así no tengo que hacer ifs en el codigo-->
+
+                <div class="buscar-por">
+                    <input type="checkbox" name="" id="title">
+                    <label for="title">Title</label>
+                    <input type="checkbox" name="" id="director">
+                    <label for="director">Director</label>
+                    <input type="checkbox" name="" id="actors">
+                    <label for="actors">Actors</label>
+                </div>
+
+                <div class="countries">
+
+                    <p>Country: </p>
+
+                    <select class="select-countries" name="">
+                        <option value="all">All countries</option>
+                    </select>
+
+                </div>
+
+
+                <div class="genres">
+
+                    <p>Gender:</p>
+                    <input class = "genre" type="checkbox" name="all" id="allGenders">
+                    <label for="allGenders">All genders</label>
+
+                    <!--Se van a cargar más dinamicamenente-->
+
+                </div>
+
+                <div class="dates">
+
+                    <label for="select-year-init">Year from</label>
+                    <select name="" id="select-year-init">
+                        <option value="">----</option>
+                    </select>
+
+                    <label for="select-year-end">to</label>
+                    <select name="" id="select-year-end">
+                        <option value="">----</option>
+                    </select>
+
+                </div>
+
+                    <button type="button">Find</button>
+
+
+                </div>
+
+        </form>
+
+
+    <div class="card-container">
+
+    </div>
+
+    <!--Se cargan dinamicamenente
+    <div class="card-container">
+
+        <div class="card">
+            <img src="EJEMPLO" alt="Avatar">
+            <div class="card-title">EJ</div>
+            <div class="card-image">EJ</div>
+            <div class="card-genres">EJ</div>
+        </div>
+
+    </div> -->
+
+        <div id="json-salida">
+            <h3>En JSON:</h3>
+            <code id="json"></code>
+        </div>
+
+
+</body>
+
+<script src="pelisList.js"></script>
+<script src="mainJNCB.js"></script>
+<script src="filtrospelis.js"></script>
+
+</html>
