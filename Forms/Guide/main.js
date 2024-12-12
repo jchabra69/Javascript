@@ -177,7 +177,6 @@ allInputs.forEach((input) => {
     input.addEventListener('blur', validateForm);
 
 
-
 });
 
 
