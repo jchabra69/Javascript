@@ -1,0 +1,9 @@
+Modificar contenido de elementos diferentes
+
+elemento.value = INPUTS, TEXTAREAS, SELECTS, BUTTONS.
+elemento.textContent = DIV, SPAN, P, H1 - H6, button
+
+elemento.innerHMTL = 
+Elementos contenedores como <div>, <span>, <p>, <section>, <article>, etc.
+Elementos estructurales como <body>, <header>, <footer>, <main>.
+Elementos interactivos como <button> y <textarea> (aunque con limitaciones de utilidad).
